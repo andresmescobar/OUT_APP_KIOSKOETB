@@ -1,0 +1,343 @@
+html {
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: rgba(253, 253, 253, 0);
+    background: #f8f8f8;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: black;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-size: cover;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: grey;
+    }
+
+a, select, input[type=button], input[type=file], input[type=checkbox], input[type=radio], input[type=submit], input[type=reset] {
+    cursor: pointer !important;
+    cursor: hand !important;
+}
+
+iframe {
+    min-width: 100%;
+    min-height: 450px;
+    margin-bottom: 60px;
+}
+
+button{
+    height: 50px !important;
+    margin-right: 15px !important;
+}
+
+.btn-menu {
+    height: 60px !important;
+    margin-right: 15px !important;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 15px;
+    background: black;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+}
+
+    .ir-arriba:hover {
+        background-color: #1d1c1c; /* Add a dark-grey background on hover */
+    }
+
+    .ir-arriba:active {
+        background-color: #555; /* Add a dark-grey background on active */
+    }
+
+.btnsAction {
+    height: 70px;
+    width: 85px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 5;
+    text-align: center;
+}
+
+.redondearBotonMenu{
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 50px !important;
+    border-color: #5bc0de !important;
+    padding-top: 35px !important;
+}
+
+.TamanioLetra{
+    font-size: large;
+    color: #337ab7;
+}
+
+.alertMessage {
+    display: none;
+    width: 70%;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    z-index: 10001;
+    text-align: left;
+}
+
+.full {
+    no-repeat: center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page-container {
+    position: relative;
+    margin: 3% auto 0 auto;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form-login {
+    max-width: 100%;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    /* background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);*/
+}
+
+    .form-login label {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .form-login input {
+        font-size: 14px;
+        height: auto;
+        margin-bottom: 8px;
+        padding: 6px 6px;
+    }
+
+        .form-login input[type="text"] {
+            font-size: 14px;
+            height: auto;
+            margin-bottom: 8px;
+            padding: 6px 6px;
+        }
+
+    .form-login button {
+        cursor: pointer;
+        min-width: 245px;
+        height: 44px;
+        margin-top: 20px;
+        padding: 0;
+        /*background: #052974;
+        border-radius: 6px;
+        border: 1px solid #052974;*/
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+
+.options-dropdown {
+    margin: 20px;
+}
+
+.dropdown-menu {
+    margin-left: 15px;
+}
+
+.idLabelForm {
+    background-color: #052974;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+label[class~="error"] {
+    color: #ce1111;
+    font-size: 12px;
+    background: url(../../Content/images/unchecked.gif) no-repeat;
+    padding-left: 16px;
+    margin-left: .3em;
+    cursor: not-allowed;
+}
+
+#headerFull {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .form-login {
+        margin: 0px;
+        max-width: 100%;
+    }
+
+        .form-login button {
+            margin-top: 30px;
+        }
+}
+
+.boton {
+    cursor: pointer;
+    cursor: hand;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #4266b7;
+    box-shadow: 0 5px 5px #1942a2, 0 9px 0 #4266b7, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: inline-block;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+
+    .boton:hover {
+        box-shadow: 0 5px 5px #4266b7, 0 9px 0 #4266b7, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+        color: #fff !important;
+    }
+
+    .boton:active {
+        top: 7px;
+        box-shadow: 0 2px 0 #4266b7, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+        color: #fff !important;
+    }
+
+.formaBoton {
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+.btns {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+    /* Animacion del boton compatible con diferentes navegadores */
+    -webkit-transition: all 0.1s; /* Chrome antiguo y Safari */
+    -moz-transition: all 0.1s; /* Mozilla antiguo */
+    -o-transition: all 0.1s; /* Opera antiguo */
+    transition: all 0.1s; /* Regla estandar */
+}
+
+    .btns:active {
+        -webkit-transform: translateY(7px);
+        -moz-transform: translateY(7px);
+        -o-transform: translateY(7px);
+        transform: translateY(7px);
+    }
+
+.btns-ping {
+    background: #BA54D3;
+    box-shadow: 0 10px 0 #8E29A7, 0 11px 5px rgba(0,0,0,0.5);
+}
+
+    .btns-ping:active {
+        box-shadow: 0 3px 0 #8E29A7, 0 4px 6px rgba(0,0,0,0.7);
+    }
+
+.btns-warning {
+    background: #FF9819;
+    box-shadow: 0 10px 0 #CC7000, 0 11px 5px rgba(0,0,0,0.5);
+}
+
+    .btns-warning:active {
+        box-shadow: 0 3px 0 #CC7000, 0 4px 6px rgba(0,0,0,0.7);
+    }
+
+.btns-success {
+    background: #589900;
+    box-shadow: 0 10px 0 #3A6600, 0 11px 5px rgba(0,0,0,0.5);
+}
+
+    .btns-success:active {
+        box-shadow: 0 3px 0 #3A6600, 0 4px 6px rgba(0,0,0,0.7);
+    }
+
+.btns-fucsia {
+    background: #FF1493;
+    box-shadow: 0 10px 0 #CC006E, 0 11px 5px rgba(0,0,0,0.5);
+}
+
+    .btns-fucsia:active {
+        box-shadow: 0 3px 0 #CC006E, 0 4px 6px rgba(0,0,0,0.7);
+    }
+
+.btns-primary {
+    background: #1E90FF;
+    box-shadow: 0 10px 0 #005AB2, 0 11px 5px rgba(0,0,0,0.5);
+}
+
+    .btns-primary:active {
+        box-shadow: 0 3px 0 #005AB2, 0 4px 6px rgba(0,0,0,0.7);
+    }
+
+.redondo {
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
